@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Tomás Ribes</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <!-- Opciones del menu -->
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="circular--square" src="img/CVFoto.jpg" alt="">
+            </div>
+            <h1>TOMAS RIBES</h1>
+            <h2>Ingeniero en Software</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/tomi_ribes/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tomasribess21/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/TomasRibesB" target="_blank"><i class="fa-brands fa-github"
+                        target="_blank"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=543541610758&text=%C2%A1Hola%21%20Estaba%20viendo%20tu%20p%C3%A1gina
+                %20y%20quer%C3%ADa%20contactarme%20contigo%20para%20consultarte%3A" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Tomás Ribes.</span> Actualmente, me encuentro estudiando la carrera de grado Ingeniería
+                en Software,
+                en la Facultad Empresarial Siglo 21, en la modalidad Presencial Home desde 2021. Mis hobbies principales
+                son hacer deporte, los videojuegos,
+                e informarme de cosas que me generen interés, por ejemplo, smartphones y tecnologías relacionadas. Soy
+                una persona proactiva y responsable,
+                me gusta aprender cosas nuevas y ayudar a los demás.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                            12-09-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 9 3541-610758
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            tomasribesb@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ciudad</strong>
+                            Villa Carlos Paz, Córdoba, Argentina.
+                        </li>
+                        <li>
+                            <strong>Estado</strong>
+                            <span>En busca de pasantía</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Deportes</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Aprendizaje</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Smartphones</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Tecnología</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Multimedia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajes</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarcv()">
+                Descargar CV <i class="fa-sharp fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+    </section>
+
+    <!-- Sección Skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Skills Tecnicas -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="java-size"><i class="fa-brands fa-java"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTM</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-brands fa-html5"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-brands fa-css3-alt"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-brands fa-square-js"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kotlin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" class="icon-kotlin" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M20 20h-16v-16h16" />
+                                        <line x1="4" y1="20" x2="20" y2="4" />
+                                        <path d="M4 12l8 -8" />
+                                        <line x1="12" y1="12" x2="20" y2="20" />
+                                    </svg></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-database"></i></span>
+                            </div>
+                        </div>
+                    </div> 
+                    Proximamente-->
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="ps-size"><i class="fa-solid fa-p"><i class="fa-solid fa-s"></i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-headset"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-user-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-handshake"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-lightbulb"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-medal"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fa-solid fa-gear"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Software</h4>
+                        <span class="casa">Universidad Empresarial Siglo 21</span>
+                        <span class="fecha">2021 - Actualidad</span>
+                        <p>Siglo 21 me aportó muchos conocimientos. Al estudiar con una plataforma virtual, aprendí
+                            a organizar mis estudios, tareas y gestionar eficientemente mi vida diaria. Además, la
+                            facultad me abrió las puertas para conocer
+                            otros ámbitos, así como relacionarme con profesionales. Por otra parte, los proyectos
+                            incentivan el trabajo en grupos tanto en
+                            formato presencial, como en formato virtual, lo que me permite desarrollarme mejor en dicho
+                            entorno. También la facultad me da la
+                            oportunidad de llegar a un nivel avanzado de inglés, además proveerme de materias de cursado
+                            opcionales, las cuales cursé para desarrollarme
+                            mejor como profesional:
+                        <form>
+                            <li>Desarrollo Emprendedor </li>
+                            <li>Innovación para Nuevos Negocios</li>
+                            <li>Gestión de Equipos SCRUM</li>
+                            <li>Ciber Delito</li>
+                            <li>Inglés</li>
+                        </form>
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso: Desarrollo en Android: Kotlin</h4>
+                        <span class="casa">by Mouredev</span>
+                        <span class="fecha">2023</span>
+                        <p>Mouredev es un canal de Youtube que sube videos de programación con un nivel de
+                            profesionalidad impecable.
+                            Una vez finalizado el curso ya se está en condiciones de introducirse al mundo laboral e
+                            iniciar proyectos
+                            con un buen nivel de complejidad. Además, Kotlin es un lenguaje basado en Java, esto me
+                            facilita mucho
+                            su entendimiento, dado que es el lenguaje que utilizo para los proyectos de la facultad. Por
+                            otro lado,
+                            la programación de dispositivos portátiles como smartwaches, smartphones, etc. me generan
+                            especial interés.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso: Desarrollo Web: HTML, CSS, JS</h4>
+                        <span class="casa">Academy: Argentina Programa 4.0</span>
+                        <span class="fecha">2023</span>
+                        <p>Este curso me dio la posibilidad de introducirme en la programación web, dado que en la
+                            facultad no hacemos mucho énfasis
+                            a esta rama. Además, me ha dado herramientas para seguir desarrollándome en el área y
+                            mediante distintos formatos conseguir información y
+                            ayuda para seguir evolucionando. Esta presentación es el fruto de dicho curso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés - 4TH Intermédiate</h4>
+                        <span class="casa">Instituto de Intercambio Cultural Argentino Norteamericano (IICANA)</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <p>IICANA es un instituto de Inglés. Aquí me desarrollé presencialmente por 2 años enteros,
+                            hablando y escribiendo el idioma guiado por
+                            excelentes profesionales. Al ser presencial, el instituto me dio la oportunidad de practicar
+                            activa y continuamente el Inglés.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundario</h4>
+                        <span class="casa">Instituto de Enseñanza Media San Andrés</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>El colegio secundario San Andrés tiene orientación en Sociales y Humanidades. Lo que rescato
+                            del secundario
+                            es la mentalidad crítica y el desarrollo propio que me enseñaron a desarrollar. En el
+                            colegio te incentivaban a hacer proyectos
+                            con metodologías de la información que me dieron la capacidad de comparar información en
+                            distintos formatos, filtrarla y ser crítico con esta.
+                            Además, al ser un colegio estricto, no solamente en lo reglamentario, sino que en los
+                            proyectos y evaluaciones en tiempo y forma, me llevaron a ser una
+                            persona prolija y responsable en el trabajo.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Oficina</h4>
+                        <span class="casa">Josecito Gas S.R.L</span>
+                        <span class="fecha">2018 - Actualidad</span>
+                        <p>Josecito Gas es una empresa de distribución de gas envasado. En esta empresa me desempeño en
+                            distintas áreas:</p>
+                        <form>
+                            <li>Call Center </li>
+                            <li>Manejo de Caja</li>
+                            <li>Control de Stock</li>
+                            <li>Administración de Redes Sociales</li>
+                            <li>Diseñador Visual</li>
+                        </form>
+                        <p>En la empresa estoy en contacto con los clientes y el área administrativa. Me desarrollé en
+                            múltiples áreas de acuerdo a las
+                            necesidades requeridas para el desempeño del puesto. Aquí utilizo distintas herramientas
+                            como Office, Photoshop, Video Proc, Reaper, WhatsApp Business,
+                            Instagram y Facebook.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/BibliotecaEscolar.png" alt="">
+                    <div class="overlay">
+                        <h3>Biblioteca Escolar</h3>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto</h3>
+                        <p>Herramienta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto</h3>
+                        <p>Herramienta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto</h3>
+                        <p>Herramienta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto</h3>
+                        <p>Herramienta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto</h3>
+                        <p>Herramienta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contactoenviar">
+                        <input type="text" class="form-control" placeholder="Nombre Completo" name="nombre" required>
+                        <input type="number" class="form-control" placeholder="Número Telefónico ej: +00 0000-000000"
+                            name="numero" required>
+                        <input type="email" class="form-control" placeholder="E-mail ej: ejemplo@ejemplo.com"
+                            name="email" required>
+                        <input type="text" class="form-control" placeholder="Tema del Comunicado" name="tema" required>
+                        <textarea type="text" class="form-control" cols="30" rows="10" placeholder="Mensaje"
+                            name="mensaje" required></textarea>
+                        <button id="enviarmensaje">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+
+                    <!-- Importo libreria mailjs -->
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                    <script type="text/javascript">
+                        emailjs.init('3C_cYiw8h-rqUcfJ6')
+                    </script>
+
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/maps.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-map-pin"></i>
+                                Villa Carlos Paz, Córdoba, Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llámame: +54 9 3541-610758
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: tomasribesb@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <div class="redes">
+                <a href="https://www.instagram.com/tomi_ribes/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tomasribess21/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/TomasRibesB" target="_blank"><i class="fa-brands fa-github"
+                        target="_blank"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=543541610758&text=%C2%A1Hola%21%20Estaba%20viendo%20tu%20p%C3%A1gina
+                %20y%20quer%C3%ADa%20contactarme%20contigo%20para%20consultarte%3A" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
