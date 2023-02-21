@@ -616,6 +616,20 @@ proximamente*/
 
 }
 
+.curriculum .fila .item a{
+    text-align: none;
+    color: #fff;
+    margin-left: 95%;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+    display: block;
+}
+
+.curriculum .fila .item a:hover{
+    color:#fcef39;
+}
+
 /*Sección Portafolio*/
 
 .portafolio {
