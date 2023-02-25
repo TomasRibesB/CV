@@ -48,7 +48,7 @@ window.onscroll = function(){
 
 //funcion para descargar el cv
 function descargarcv(){
-    window.location.href='https://drive.google.com/uc?id=1AHr0ESabn_wqdlG1stz6N7-wSOc_kYhW&export=download'
+    window.location.href='https://drive.google.com/uc?export=download&id=1AHr0ESabn_wqdlG1stz6N7-wSOc_kYhW'
 }
 
 //funcion enviar mail
@@ -67,4 +67,26 @@ document.getElementById('contactoenviar')
     }, (err) => {
       alert(JSON.stringify(err));
     });
+})
+
+//Funcion certificados emergentes 
+
+document.getElementById('show-modal').addEventListener('click', function(event){
+    document.getElementById('background-modal').classList.remove('modal-inactive')
+    document.getElementById('background-modal').classList.add('modal-active')
+}) 
+
+document.getElementById('close-modal').addEventListener('click', function(event){
+    document.getElementById('background-modal').classList.remove('modal-active')
+    document.getElementById('background-modal').classList.add('modal-inactive')
+}) 
+
+document.getElementById('show-modal1').addEventListener('click', function(event){
+    document.getElementById('background-modal1').classList.remove('modal-inactive1')
+    document.getElementById('background-modal1').classList.add('modal-active1')
+}) 
+
+document.getElementById('close-modal1').addEventListener('click', function(event){
+    document.getElementById('background-modal1').classList.remove('modal-active1')
+    document.getElementById('background-modal1').classList.add('modal-inactive1')
 })
