@@ -30,13 +30,15 @@ function efectoHabilidades(){
         habilidades[2].classList.add("css");
         habilidades[3].classList.add("javascript");
         habilidades[4].classList.add("kotlin");
-        habilidades[5].classList.add("photoshop");
-        habilidades[6].classList.add("comunicacion");
-        habilidades[7].classList.add("trabajo");
-        habilidades[8].classList.add("responsabilidad");
-        habilidades[9].classList.add("creatividad");
-        habilidades[10].classList.add("dedicacion");
-        habilidades[11].classList.add("proactividad");
+        habilidades[5].classList.add("mysql");
+        habilidades[6].classList.add("php");
+        habilidades[7].classList.add("react");
+        habilidades[8].classList.add("comunicacion");
+        habilidades[9].classList.add("trabajo");
+        habilidades[10].classList.add("responsabilidad");
+        habilidades[11].classList.add("creatividad");
+        habilidades[12].classList.add("dedicacion");
+        habilidades[13].classList.add("proactividad");
     }
 }
 
@@ -82,11 +84,38 @@ document.getElementById('close-modal').addEventListener('click', function(event)
 }) 
 
 document.getElementById('show-modal1').addEventListener('click', function(event){
-    document.getElementById('background-modal1').classList.remove('modal-inactive1')
-    document.getElementById('background-modal1').classList.add('modal-active1')
+    document.getElementById('background-modal1').classList.remove('modal-inactive')
+    document.getElementById('background-modal1').classList.add('modal-active')
 }) 
 
 document.getElementById('close-modal1').addEventListener('click', function(event){
-    document.getElementById('background-modal1').classList.remove('modal-active1')
-    document.getElementById('background-modal1').classList.add('modal-inactive1')
+    document.getElementById('background-modal1').classList.remove('modal-active')
+    document.getElementById('background-modal1').classList.add('modal-inactive')
 })
+
+
+//Función para cambiar imagenes en proyectos
+function cambiarImagenes(idElementoImagen, imagenes) {
+    let currentIndex = 0;
+    const imgElement = document.querySelector(`#${idElementoImagen}`);
+  
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % imagenes.length;
+      imgElement.style.opacity = 0; // Ajustar la opacidad a 0
+      setTimeout(() => {
+        imgElement.src = imagenes[currentIndex];
+        imgElement.style.opacity = 1; // Ajustar la opacidad a 1
+      }, 250); // Esperar 500ms antes de cambiar la imagen
+    }, 5000);
+  }
+  
+  // Llamada a la función para cambiar las imágenes de un elemento con ID "TelemetriaIMG" y un arreglo de imágenes específico.
+  const imagenesTelemetria = ["img/login.png", "img/relojes.png", "img/graficos.png", "img/registro.png"];
+  cambiarImagenes("TelemetriaIMG", imagenesTelemetria);
+  
+  const imagenesBiblioteca = ["img/historial.png", "img/gestionLibros.png", "img/verAlumnos.png", "img/verLibros.png", "img/BibliotecaEscolar.png"];
+  cambiarImagenes("BibliotecaIMG", imagenesBiblioteca);
+
+  function onSubmit(token) {
+    document.getElementById("contactoenviar").submit();
+  }
