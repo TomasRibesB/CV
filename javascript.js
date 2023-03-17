@@ -115,7 +115,3 @@ function cambiarImagenes(idElementoImagen, imagenes) {
   
   const imagenesBiblioteca = ["img/historial.png", "img/gestionLibros.png", "img/verAlumnos.png", "img/verLibros.png", "img/BibliotecaEscolar.png"];
   cambiarImagenes("BibliotecaIMG", imagenesBiblioteca);
-
-  function onSubmit(token) {
-    document.getElementById("contactoenviar").submit();
-  }
