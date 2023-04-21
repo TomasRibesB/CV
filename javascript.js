@@ -50,7 +50,7 @@ window.onscroll = function(){
 
 //funcion para descargar el cv
 function descargarcv(){
-    window.location.href='https://drive.google.com/uc?export=download&id=1AHr0ESabn_wqdlG1stz6N7-wSOc_kYhW'
+    window.location.href='https://drive.google.com/uc?export=download&id=1XUJQz3dPvqcmB9CfNBeQyeh7cKjgo-dA'
 }
 
 //funcion enviar mail
